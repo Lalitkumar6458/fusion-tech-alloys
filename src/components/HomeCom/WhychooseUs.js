@@ -32,7 +32,7 @@ const Data=[ {
     </p>
     </div>
 
-    <div className='grid grid-cols-4 gap-[10px] mt-[60px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px] mt-[60px]'>
     {
         Data.map((item,i)=>{
             return <div className='flex items-center justify-center flex-col shadow-md p-4 gap-2 border rounded-md' key={i}>

@@ -37,7 +37,7 @@ const ApplicationSec = () => {
 
     </div>
 
-    <div className='grid grid-cols-4 gap-[10px] mt-[50px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px] mt-[50px]'>
     {
         Data.map((item,i)=>{
             return <div className=' shadow-md border rounded-md group' key={i}>
