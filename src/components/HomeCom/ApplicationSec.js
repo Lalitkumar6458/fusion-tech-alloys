@@ -4,29 +4,29 @@ import React from 'react'
 const ApplicationSec = () => {
     const Data=[{
         heading:"Power Plants Industries",
-        img:"/Images/Industries/Img1.jpg"
+        img:"/Images/newAplication/img5.jpeg"
     },
     {
         heading:"Aerospace Industries",
-        img:"/Images/Industries/Img2.jpg"
+        img:"/Images/newAplication/aircraftImg.jpg"
     },{
         heading:"Refineries Industries",
-        img:"/Images/Industries/Img3.jpg"
+        img:"/Images/newAplication/refineryImg.jpg"
     },{
         heading:"Construction",
-        img:"/Images/Industries/Img4.jpg"
+        img:"/Images/newAplication/img1.jpg"
     },{
         heading:"Oil & Gas",
-        img:"/Images/Industries/Img5.jpg"
+        img:"/Images/newAplication/img3.jpg"
     },{
         heading:"Sugar Industries",
-        img:"/Images/Industries/Img6.jpg"
+        img:"/Images/newAplication/sugerFactriyImg.jpg"
     },{
         heading:"Chemical Industries",
-        img:"/Images/Industries/Img7.jpg"
+        img:"/Images/newAplication/img5.avif"
     },{
         heading:"Petrochemical Industries",
-        img:"/Images/Industries/Img8.jpg"
+        img:"/Images/newAplication/img8.jpg"
     },
 ]
   return (

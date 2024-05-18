@@ -261,7 +261,7 @@ const [openSearch, setOpenSearch] = useState(false);
     >
       <div className="flex items-center justify-between w-full">
         <div className="text-[1.6rem] h-full font-heading font-medium text-dark-cl">
-
+          <h1 className='text-[2.7rem] font-thmFont font-medium text-thmBlack'>Fusion Tech Alloys</h1>
         </div>
         <div className="flex items-center gap-5">
           <ul className="hidden items-center justify-center gap-3 md:flex">
@@ -326,7 +326,7 @@ const [openSearch, setOpenSearch] = useState(false);
         </div>
       </div>
       <Drawer
-        title="Maruti Steel Alloys"
+        title="Fusion Tech Alloys"
         width={300}
         placement="right"
         onClose={onClose}

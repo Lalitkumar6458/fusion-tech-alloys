@@ -106,18 +106,18 @@ const list3=[
 ]
 const handleEmailClick = () => {
 
-  let email='marutisteela@gmail.com'
+  let email='fusiontechalloys@gmail.com'
   const url = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}`;
   window.open(url);
 };
 const handlePhoneClick = () => {
-let  phoneNumber=`+91 9769962083`
+let  phoneNumber=`+91 9137130839`
   const formattedPhoneNumber = phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
   const url = `tel:${formattedPhoneNumber}`;
   window.location.href = url;
 };
 const handleWhatsAppClick = () => {
-  let  phoneNumber=`+91 9769962083`
+  let  phoneNumber=`+91 9137130839`
   const formattedPhoneNumber = phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
   const url = `https://wa.me/${formattedPhoneNumber}`;
   window.open(url, '_blank');
@@ -138,11 +138,11 @@ const handleInsta = (url) => {
       <div className='h-1 rounded bg-thmBase w-20'></div>
       </div>
       <p className="font-Oswald text-[0.8rem]">
-      {'Maruti Steel Alloys is rapidly establishing itself as a prominent frontrunner within the Pipes and Tubes industry. With a specialization in Stainless Steel Pipes, Stainless Steel Tubes, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, and Valves, Maruti Steel Alloys stands out as a premier stockist and supplier in India.'}
+      {'Fusion Tech Alloys is rapidly establishing itself as a prominent frontrunner within the Pipes and Tubes industry. With a specialization in Stainless Steel Pipes, Stainless Steel Tubes, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, and Valves, Maruti Steel Alloys stands out as a premier stockist and supplier in India.'}
       </p>
       <div className='mt-3'>
-      <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'marutisteela@gmail.com'}</strong> </span>
-      <span className='flex items-center gap-2 mt-1 cursor-pointer'  onClick={handlePhoneClick} ><FaPhone className='text-thmBase'/> <strong>+91 +91 9769962083 / 9328158053</strong></span>
+      <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'fusiontechalloys@gmail.com'}</strong> </span>
+      <span className='flex items-center gap-2 mt-1 cursor-pointer'  onClick={handlePhoneClick} ><FaPhone className='text-thmBase'/> <strong>+91 9137130839 </strong></span>
    
       </div>
       <div className="mt-5">
@@ -150,18 +150,18 @@ const handleInsta = (url) => {
       <li className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleEmailClick}><Link href="/" className="fa-brands fa-google"><AiOutlineGoogle/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase  hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+                 ""
                )
              }><Link href="/" className="fa-solid fa-rss"><FaRss/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+                 ""
                )
              }><Link href="/" className="fa fa-facebook"><FaFacebookF/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleWhatsAppClick}><Link href="/" className="fa fa-twitter"><FaWhatsapp/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+                 ""
                )
              }><Link href="/" className="fa fa-linkedin"><FaLinkedinIn/></Link></li>
    </ul>  

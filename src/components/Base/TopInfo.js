@@ -4,18 +4,18 @@ import {FaPhone,FaEnvelope,FaWhatsapp, FaFacebook, FaInstagram} from "react-icon
 
 const TopInfo = () => {
   const handleEmailClick = () => {
-    let email='lalitkumar6458@gmail.com'
+    let email='fusiontechalloys@gmail.com'
     const url = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}`;
     window.open(url);
   };
   const handlePhoneClick = () => {
-  let  phoneNumber="+91"+'9326875077'
+  let  phoneNumber="+91"+'9137130839'
     const formattedPhoneNumber = phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
     const url = `tel:${formattedPhoneNumber}`;
     window.location.href = url;
   };
   const handleWhatsAppClick = () => {
-    let  phoneNumber="+91"+'9326875077'
+    let  phoneNumber="+91"+'9137130839'
     const formattedPhoneNumber = phoneNumber.replace(/\D/g, ''); // Remove non-numeric characters
     const url = `https://wa.me/${formattedPhoneNumber}`;
     window.open(url, '_blank');
@@ -32,14 +32,14 @@ const TopInfo = () => {
           onClick={handlePhoneClick}
         >
           <FaPhone className="text-mainRed" /> +91:
-          {'9326875077'}
+          {'9137130839'}
         </span>
         <span
           className="flex items-center gap-3 font-poppins min-[320px]:text-[0.9rem] xl:text-[1.2rem]  lg:text-[1rem] cursor-pointer "
           onClick={handleEmailClick}
         >
           <FaEnvelope className="text-mainRed" />{" "}
-          {'lalitkumar6458@gmail.com'}{" "}
+          {'fusiontechalloys@gmail.com'}{" "}
         </span>
       </div>
       <div className="flex items-center gap-2 max-[767px]:text-[1.2rem] lg:text-[1.2rem]  xl:text-[1.2rem]">
@@ -53,7 +53,7 @@ const TopInfo = () => {
           className="p-2 rounded-full text-thmBase bg-white hover:bg-thmBase hover:text-white cursor-pointer"
           onClick={() =>
             handleInsta(
-              "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+              ""
             )
           }
         >
@@ -63,7 +63,7 @@ const TopInfo = () => {
           className="p-2 rounded-full text-thmBase bg-white hover:bg-thmBase hover:text-white cursor-pointer"
           onClick={() =>
             handleInsta(
-              "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+              ""
             )
           }
         >
