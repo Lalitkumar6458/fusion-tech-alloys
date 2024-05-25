@@ -261,7 +261,7 @@ const [openSearch, setOpenSearch] = useState(false);
     >
       <div className="flex items-center justify-between w-full">
         <div className="text-[1.6rem] h-full font-heading font-medium text-dark-cl">
-          <h1 className='text-[2.7rem] font-thmFont font-medium text-thmBlack'>Fusion Tech Alloys</h1>
+  <img className='h-[60px] w-[270px] object-fill' src={"/Images/Base/logo.png"}  alt='logo'/>
         </div>
         <div className="flex items-center gap-5">
           <ul className="hidden items-center justify-center gap-3 md:flex">

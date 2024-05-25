@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Base/Header";
 import Footer from "@/components/Base/Footer";
 import TopInfo from "@/components/Base/TopInfo";
+import NavBar from "@/components/Base/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-      <TopInfo/>
-      <Header/>
+ <NavBar/>
       {children}
       <Footer/>
       </body>

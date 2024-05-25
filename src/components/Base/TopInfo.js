@@ -4,7 +4,7 @@ import {FaPhone,FaEnvelope,FaWhatsapp, FaFacebook, FaInstagram} from "react-icon
 
 const TopInfo = () => {
   const handleEmailClick = () => {
-    let email='fusiontechalloys@gmail.com'
+    let email='sales@fusiontechalloys.com'
     const url = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}`;
     window.open(url);
   };
@@ -39,7 +39,7 @@ const TopInfo = () => {
           onClick={handleEmailClick}
         >
           <FaEnvelope className="text-mainRed" />{" "}
-          {'fusiontechalloys@gmail.com'}{" "}
+          {'sales@fusiontechalloys.com'}{" "}
         </span>
       </div>
       <div className="flex items-center gap-2 max-[767px]:text-[1.2rem] lg:text-[1.2rem]  xl:text-[1.2rem]">
