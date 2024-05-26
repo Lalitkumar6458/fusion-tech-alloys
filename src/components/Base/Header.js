@@ -70,7 +70,7 @@ const [openSearch, setOpenSearch] = useState(false);
     },
     {
       name:"Product",
-      link:"/product",
+      link:"/products",
 
       submenu:[
        {
@@ -133,7 +133,7 @@ const [openSearch, setOpenSearch] = useState(false);
     },
     {
       name:"Material",
-      link:"/material",
+      link:"/materials",
       submenu:[
         {
           name:"Alloys",
