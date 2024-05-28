@@ -101,31 +101,31 @@ const [openSearch, setOpenSearch] = useState(false);
         submenu:[
           {
             name:"Pipe",
-            link:"/product/pipe"
+            link:"/products/pipe"
           },
           {
             name:"Tubes",
-            link:"/product/tubes"
+            link:"/products/tubes"
           },
           {
             name:"Round Bar",
-            link:"/product/roundbar"
+            link:"/products/roundbar"
           },
           {
             name:"Wire",
-            link:"/product/Wire"
+            link:"/products/Wire"
           },
           {
             name:"Forged Circle & Ring",
-            link:"/product/tubes"
+            link:"/products/tubes"
           },
           {
             name:"Sheet & Plate",
-            link:"/product/SheetAndPlate"
+            link:"/products/SheetAndPlate"
           },
           {
             name:"COILS & STIRPS",
-            link:"/product/CoilsAndStirps"
+            link:"/products/CoilsAndStirps"
           },
         ]
        }

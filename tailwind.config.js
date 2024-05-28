@@ -19,11 +19,15 @@ module.exports = {
         thmBlack:"var(--thm-black)",
         thmText:"var(--thm-text)",
         thmBase:"var(--thm-base)",
+        "dark-cl":"var(--thm-black)",
+        "mainRed":"var(--thm-base)"
       },
       fontFamily:{
         thmFont:"var(--thm-font)",
         inter:"var(--inter-font)",
-        oswald:'var(--oswald-font)'
+        oswald:'var(--oswald-font)',
+        Roboto:"var(--thm-font)",
+        poppins:"var(--inter-font)"
       },
       boxShadow:{
         headerShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",
