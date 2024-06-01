@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import RigthSideBox from '../common/RightSidebar'
 
-const ProductSec = (HideH) => {
+const ProductSec = ({HideH}) => {
     const ProductData=[
         {
             name:'Pipes',
@@ -13,19 +14,19 @@ const ProductSec = (HideH) => {
         {
             name:'Tubes',
             img:'/Images/Products/HomeImg/tubes.png',
-            link:'/products/pipe',
+            link:'/products/tubes',
             desc:''
         },
         {
             name:'Flanges',
             img:'/Images/Products/HomeImg/flange.png',
-            link:'/products/tubes',
+            link:'/products/flanges',
             desc:''
         },
         {
             name:'Fasteners',
             img:'/Images/Products/HomeImg/fastener.png',
-            link:'/products/flanges',
+            link:'/products/fasteners',
             desc:''
         },
         {
@@ -35,14 +36,14 @@ const ProductSec = (HideH) => {
             desc:''
         },
         {
-            name:'Bars,Rods & Wires ',
+            name:'Bars & Rods',
             img:'/Images/Products/HomeImg/rod.png',
             link:'/products/bars_rods_wires',
             desc:''
         },{
             name:'Pipe Fittings',
             img:'/Images/Products/HomeImg/fitting.png',
-            link:'/products/pipe_fittings',
+            link:'/products/pipeFettings',
             desc:''
         },{
             name:'Welding Consumables',
@@ -74,7 +75,7 @@ return<Link href={item.link} >
         })
     }
      <div className=''>
-     
+   
      </div>
     </div>
     </div>

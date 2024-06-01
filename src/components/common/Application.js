@@ -6,7 +6,7 @@ import img from "../../../public/Images/Products/Group 1095.jpg";
 
 import { applicationsData } from '../../../public/ContactData';
 const Application = ({name}) => {
-  console.log("img", img);
+
   return (
     <div className="mt-9 mb-6">
       <div className=" border-b border-gray-500">

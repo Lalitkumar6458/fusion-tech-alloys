@@ -10,7 +10,7 @@ import SupplierCities from './SupplierCities'
 import SupplierCountries from './SupplierCountries'
 
 const ProductCon = ({data,name,grade,heading}) => {
-    console.log(name,"name")
+
    
 const SpecificationsKey = Object.keys(data.Specifications);
 const GradeKey = Object.keys(GradeData.gardeData);
@@ -113,11 +113,14 @@ const GradeKey = Object.keys(GradeData.gardeData);
             }
             
           </div>
-          <div className=" border-b border-gray-500 mt-[40px]">
+          {
+            data.type.length>0?     <div className=" border-b border-gray-500 mt-[40px]">
             <h3 className="text-[1.6rem] md:text-[1.9rem] font-Roboto font-semibold border-b-2 border-mainRed w-fit text-dark-cl">
               Types - {name}
             </h3>
-          </div>
+          </div>:null
+          }
+     
 
           <div className=" mb-[40px]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[40px]">

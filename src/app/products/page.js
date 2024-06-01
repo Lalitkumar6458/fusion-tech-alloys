@@ -1,5 +1,6 @@
 import SubHeader from '@/components/Base/SubHeader'
 import ProductSec from '@/components/HomeCom/ProductSec'
+import ContactProduct from '@/components/common/ContactLink'
 import React from 'react'
 
 const page = () => {
@@ -10,6 +11,8 @@ const page = () => {
     <div className=''>
     <ProductSec HideH={true}/>
     </div>
+
+    <ContactProduct/>
     </div>
   )
 }

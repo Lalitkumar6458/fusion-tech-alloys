@@ -1,12 +1,13 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 import { FaSearch,FaBars, FaMinus } from 'react-icons/fa'
 import {FiPlus} from "react-icons/fi"
 import {LiaAngleRightSolid} from "react-icons/lia"
 import { Button, Drawer, AutoComplete, Input } from "antd";
 import Image from 'next/image';
-import Router,{ useRouter } from 'next/router';
+import { usePathname, useRouter } from 'next/navigation';
+
 
 
 
@@ -37,8 +38,8 @@ const searchResult = (data) =>{
 
 
 const Header = ({fixed}) => {
-  Router.events.on('routeChangeStart',(url)=>{
-  })
+const router=useRouter()
+const pathname = usePathname()
 const [openSearch, setOpenSearch] = useState(false);
   const [open, setOpen] = useState(false);
   const[mobileheaderChildShow,setMobileHeaderChildShow]=useState({
@@ -69,6 +70,143 @@ const [openSearch, setOpenSearch] = useState(false);
       link:"/about"
     },
     {
+      name:"Alloys",
+      link:"#",
+      submenu:[
+        {
+          name:"INCONEL",
+          link:"#",
+          submenu:[
+            {
+              name:"Inconel 600",
+              link:"/alloys/Inconel_600",
+            },
+            {
+              name:"Inconel 617",
+              link:"/alloys/Inconel_617",
+            },
+            {
+              name:"Inconel 625",
+              link:"/alloys/Inconel_625",
+            },
+            {
+              name:"Inconel 718",
+              link:"/alloys/Inconel_718",
+            },
+          ]
+        },
+        {
+          name:"INCOLOY",
+          link:"#",
+          submenu:[
+            {
+              name:"Incoloy 800",
+              link:"/alloys/Incoloy_800",
+            },
+            {
+              name:"Incoloy 825",
+              link:"/alloys/Incoloy_825",
+            },
+          ]
+
+        },
+        {
+          name:"HASTELLOY",
+          link:"#",
+          submenu:[
+            {
+              name:"Hastelloy C276",
+              link:"/alloys/Hastelloy_C276",
+            },
+            {
+              name:"Hastelloy C22",
+              link:"/alloys/Hastelloy_C22",
+            },
+            {
+              name:"Hastelloy B2",
+              link:"/alloys/Hastelloy_B2",
+            },     {
+              name:"Hastelloy B3",
+              link:"/alloys/Hastelloy_B3",
+            },     {
+              name:"Hastelloy X",
+              link:"/alloys/Hastelloy_X",
+            },     {
+              name:"Hastelloy C2000",
+              link:"/alloys/Hastelloy_C2000",
+            },
+          ]
+        }, {
+          name:"TITANIUM",
+          link:"#",
+          submenu:[ 
+            {
+              name:"Titanium Gr 1",
+              link:"/alloys/Titanium_Gr_1",
+            },
+            {
+              name:"Titanium Gr 2",
+              link:"/alloys/Titanium_Gr_2",
+            },
+            {
+              name:"Titanium Gr 5",
+              link:"/alloys/Titanium_Gr_5",
+            },     {
+              name:"Titanium Gr 9",
+              link:"/alloys/Titanium_Gr_9",
+            }
+          ]
+        },
+        {
+          name:"ZIRCONIUM",
+          link:"#",
+          submenu:[ 
+            {
+              name:"Zirconium 702",
+              link:"/alloys/Zirconium_702",
+            },
+            {
+              name:"Zirconium 705",
+              link:"/alloys/Zirconium_705",
+            },
+           
+          ]
+        }, {
+          name:"CUPRO NICKEL",
+          link:"#",
+          submenu:[ 
+            {
+              name:"Cupro Nickel 70/30",
+              link:"/alloys/Cupro_Nickel_70_30",
+            },
+            {
+              name:"Cupro Nickel 90/10",
+              link:"/alloys/Cupro_Nickel_90_10",
+            },
+           
+          ]
+        }, {
+          name:"DUPLEX & SUPER DUPLEX STEEL",
+          link:"#",
+          submenu:[ 
+            {
+              name:"Duplex steel 31803 / 2205",
+              link:"/alloys/Duplex_steel_31803_2205",
+            },
+            {
+              name:"Duplex steel 32750 / 32760",
+              link:"/alloys/Duplex_steel_32750_32760",
+            },    {
+              name:"Zeron 100",
+              link:"/alloys/Zeron_100",
+            },
+           
+          ]
+        },
+      ]
+
+    },
+    {
       name:"Product",
       link:"/products",
 
@@ -79,19 +217,15 @@ const [openSearch, setOpenSearch] = useState(false);
         submenu:[
           {
             name:"Pipe Fittings",
-            link:"/product/pipeFettings"
+            link:"/products/pipeFettings"
           },
           {
             name:"Flanges",
-            link:"/product/flanges"
+            link:"/products/flanges"
           },
           {
-            name:"Dairy Fittings",
-            link:"/product/dairyFetting"
-                },
-          {
             name:"Fasteners",
-            link:"/product/fasteners"
+            link:"/products/fasteners"
           },
         ]
        },
@@ -108,89 +242,23 @@ const [openSearch, setOpenSearch] = useState(false);
             link:"/products/tubes"
           },
           {
-            name:"Round Bar",
-            link:"/products/roundbar"
+            name:"Bars & Rods ",
+            link:"/products/bars_rods_wires"
           },
           {
-            name:"Wire",
-            link:"/products/Wire"
+            name:"Sheet,Plate & Coil",
+            link:"/products/sheet_plate_colis"
           },
           {
-            name:"Forged Circle & Ring",
-            link:"/products/tubes"
-          },
-          {
-            name:"Sheet & Plate",
-            link:"/products/SheetAndPlate"
-          },
-          {
-            name:"COILS & STIRPS",
-            link:"/products/CoilsAndStirps"
-          },
+            name:"Welding Consumables",
+            link:"/products/welding_consumables"
+          }
+         
         ]
        }
       ]
     },
-    {
-      name:"Material",
-      link:"/materials",
-      submenu:[
-        {
-          name:"Alloys",
-          link:"/material/alloys",
-          submenu:[
-            {
-              name:"Inconel Alloys",
-              link:"/material/alloys/InconelAlloys",
-            },
-            {
-              name:"Monel Alloys",
-              link:"/material/alloys/MonelAlloys",
-            },
-            {
-              name:"Hastelloy",
-              link:"/material/alloys/Hastelloy",
-            },
-            {
-              name:"Duplex Alloys",
-              link:"/material/alloys/DuplexAlloys",
-            },
-            {
-              name:"Super Duplex Alloys",
-              link:"/material/alloys/SuperDuplexAlloys",
-            },
-            {
-              name:"Cupro Nickel Alloys",
-              link:"/material/alloys/CuproNickelAlloys",
-            },
-            {
-              name:"SMO 254",
-              link:"/material/alloys/SMO254",
-            },
-            {
-              name:"Alloy 20",
-              link:"/material/alloys/Alloy20",
-            },
-            {
-              name:"Titanium",
-              link:"/material/alloys/Titanium",
-            },
-
-          ]
-        },
-        {
-          name:"Stainless Steel",
-          link:"/material/StainlessSteel"
-
-
-        },
-        {
-          name:"Carbon Steel",
-          link:"/material/CarbonSteel"
-        },
-      ]
-
-    },
+  
     {
       name:"Quality",
       link:"/quality"
@@ -204,11 +272,9 @@ const [openSearch, setOpenSearch] = useState(false);
     //   link:"/"
     // }
   ]
-  Router.events.on('routeChangeComplete',(url)=>{
-    setOpen(false)
-  })
+
   const showSubmenuMobile=(name)=>{
-    console.log("name",name)
+    
     setMobileHeaderChildShow(
       {
         ...mobileheaderChildShow,
@@ -249,6 +315,9 @@ const [openSearch, setOpenSearch] = useState(false);
     searchRecursive(objects);
     return matchingItems;
   }
+  useEffect(()=>{
+    onClose()
+  },[pathname])
 
 
   return (
@@ -261,7 +330,7 @@ const [openSearch, setOpenSearch] = useState(false);
     >
       <div className="flex items-center justify-between w-full">
         <div className="text-[1.6rem] h-full font-heading font-medium text-dark-cl">
-  <img className='h-[60px] w-[270px] object-fill' src={"/Images/Base/logo.png"}  alt='logo'/>
+  <img className='h-[60px] w-[230px] md:w-[270px] object-fill' src={"/Images/Base/logo.png"}  alt='logo'/>
         </div>
         <div className="flex items-center gap-5">
           <ul className="hidden items-center justify-center gap-3 md:flex">

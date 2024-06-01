@@ -58,7 +58,7 @@ const ContactSec = () => {
         if (Object.keys(formErrors).length === 0) {
             setLoading(true);
             // Perform submission logic (e.g., send data to server)
-            console.log('Form submitted:', formData);
+          
             // Clear the form
             setFormData({ name: '', phone: '', email: '', message: '' });
             setLoading(false);

@@ -13,14 +13,16 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "footer-bg":'var(--thm-black) url(/public/Images/footer-bg.png) center top no-repeat;'
+          "footer-bg":'var(--thm-black) url(/public/Images/footer-bg.png) center top no-repeat;',
+          ContactImg:"linear-gradient(rgba(39,38,29,0.7),rgba(39,38,29,0.7)),url(/Images/Base/bgContactImg.png)",
       },
       colors:{
         thmBlack:"var(--thm-black)",
         thmText:"var(--thm-text)",
         thmBase:"var(--thm-base)",
         "dark-cl":"var(--thm-black)",
-        "mainRed":"var(--thm-base)"
+        "mainRed":"var(--thm-base)",
+        "goldLight":"var(--thm-base)"
       },
       fontFamily:{
         thmFont:"var(--thm-font)",

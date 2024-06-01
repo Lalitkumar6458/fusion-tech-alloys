@@ -11,7 +11,7 @@ export default function Home() {
     <main className="">
     <HeroSec/>
     <AboutSec/>
-    <ProductSec/>
+    <ProductSec />
     <WhychooseUs/>
     <ApplicationSec/>
     <ContactSec/>
