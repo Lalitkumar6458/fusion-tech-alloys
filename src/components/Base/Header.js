@@ -486,7 +486,7 @@ const [openSearch, setOpenSearch] = useState(false);
                             {each.submenu ? <LiaAngleRightSolid /> : null}
 
                             {each.submenu ? (
-                              <ul className="left-[101%] absolute top-[-2px] bg-white text-gray-900 shadow-boxshadow border-t-2 border-thmBase ">
+                              <ul className="left-[100.5%] absolute top-[-2px] bg-white text-gray-900 shadow-boxshadow border-t-2 border-thmBase ">
                                 {each.submenu.map((every) => {
                                   return (
                                     <li

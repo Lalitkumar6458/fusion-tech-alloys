@@ -34,36 +34,36 @@ const Footer = () => {
 ]
 const list2=[
   {
-    name:"Pipe",
-    link:"/product/pipe"
-  },
-  {
-    name:"Tubes",
-    link:"/product/tubes"
-  },
-  {
     name:"Pipe Fittings",
-    link:"/product/pipeFettings"
+    link:"/products/pipeFettings"
   },
   {
     name:"Flanges",
-    link:"/product/flanges"
+    link:"/products/flanges"
   },
   {
     name:"Fasteners",
-    link:"/product/fasteners"
+    link:"/products/fasteners"
   },
   {
-    name:"Sheet & Plate",
-    link:"/product/SheetAndPlate"
+    name:"Pipe",
+    link:"/products/pipe"
   },
   {
-    name:"COILS & STIRPS",
-    link:"/product/CoilsAndStirps"
+    name:"Tubes",
+    link:"/products/tubes"
   },
   {
-    name:"Valves",
-    link:"/product/valves"
+    name:"Bars & Rods ",
+    link:"/products/bars_rods_wires"
+  },
+  {
+    name:"Sheet,Plate & Coil",
+    link:"/products/sheet_plate_colis"
+  },
+  {
+    name:"Welding Consumables",
+    link:"/products/welding_consumables"
   }
 ]
 const list3=[
@@ -131,7 +131,7 @@ const handleInsta = (url) => {
     <div className='  w-full'>
       <Image className='w-full h-full absolute top-0 left-0 right-0 bottom-0 object-cover' src={"/Images/footer-bg.png"} width={1000} height={500} alt='' />
 
-      <div className='grid grid-cols-1 max-[767px]:gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 md:gap-y-4 text-white gap-3 '>
+      <div className='grid grid-cols-1 max-[767px]:gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 md:gap-y-4 text-white gap-3 relative z-40'>
       <div className='pr-5'>
       <div className='mb-3'>
       <h1 className='text-[1.4rem] font-exo uppercase'>About Us</h1>
