@@ -291,12 +291,141 @@ const [openSearch, setOpenSearch] = useState(false);
     };
   const [options, setOptions] = useState([]);
   const handleSearch = (value) => {
-   const searchdfhesult= searchLabelsAndValuesByText(data,value)
+   const searchdfhesult= searchLabelsAndValuesByText(searchData,value)
     setOptions(value ? searchResult(searchdfhesult) : []);
   };
+
   const onSelect = (value) => {
     onSearchClose()
   };
+  const searchData=[
+    {
+      name:"Pipe",
+      link:"/products/pipe"
+    },
+    {
+      name:"Contact",
+      link:"/contact"
+    },
+    {
+      name:"Tubes",
+      link:"/products/tubes"
+    },
+    {
+      name:"Home",
+      link:"/"
+    },
+    {
+      name:"About",
+      link:"/about"
+    },
+    {
+      name:"Bars & Rods ",
+      link:"/products/bars_rods_wires"
+    },
+    {
+      name:"Sheet,Plate & Coil",
+      link:"/products/sheet_plate_colis"
+    },
+    {
+      name:"Welding Consumables",
+      link:"/products/welding_consumables"
+    },
+      {
+            name:"Pipe Fittings",
+            link:"/products/pipeFettings"
+          },
+          {
+            name:"Flanges",
+            link:"/products/flanges"
+          },
+          {
+            name:"Fasteners",
+            link:"/products/fasteners"
+          },
+          {
+            name:"Inconel 600",
+            link:"/alloys/Inconel_600",
+          },
+          {
+            name:"Inconel 617",
+            link:"/alloys/Inconel_617",
+          },
+          {
+            name:"Inconel 625",
+            link:"/alloys/Inconel_625",
+          },
+          {
+            name:"Inconel 718",
+            link:"/alloys/Inconel_718",
+          }, {
+            name:"Incoloy 800",
+            link:"/alloys/Incoloy_800",
+          },
+          {
+            name:"Incoloy 825",
+            link:"/alloys/Incoloy_825",
+          },  {
+            name:"Hastelloy C276",
+            link:"/alloys/Hastelloy_C276",
+          },
+          {
+            name:"Hastelloy C22",
+            link:"/alloys/Hastelloy_C22",
+          },
+          {
+            name:"Hastelloy B2",
+            link:"/alloys/Hastelloy_B2",
+          },     {
+            name:"Hastelloy B3",
+            link:"/alloys/Hastelloy_B3",
+          },     {
+            name:"Hastelloy X",
+            link:"/alloys/Hastelloy_X",
+          },     {
+            name:"Hastelloy C2000",
+            link:"/alloys/Hastelloy_C2000",
+          }, {
+            name:"Titanium Gr 1",
+            link:"/alloys/Titanium_Gr_1",
+          },
+          {
+            name:"Titanium Gr 2",
+            link:"/alloys/Titanium_Gr_2",
+          },
+          {
+            name:"Titanium Gr 5",
+            link:"/alloys/Titanium_Gr_5",
+          },     {
+            name:"Titanium Gr 9",
+            link:"/alloys/Titanium_Gr_9",
+          }, {
+            name:"Zirconium 702",
+            link:"/alloys/Zirconium_702",
+          },
+          {
+            name:"Zirconium 705",
+            link:"/alloys/Zirconium_705",
+          },  {
+            name:"Cupro Nickel 70/30",
+            link:"/alloys/Cupro_Nickel_70_30",
+          },
+          {
+            name:"Cupro Nickel 90/10",
+            link:"/alloys/Cupro_Nickel_90_10",
+          },   {
+            name:"Duplex steel 31803 / 2205",
+            link:"/alloys/Duplex_steel_31803_2205",
+          },
+          {
+            name:"Duplex steel 32750 / 32760",
+            link:"/alloys/Duplex_steel_32750_32760",
+          },    {
+            name:"Zeron 100",
+            link:"/alloys/Zeron_100",
+          },
+         
+  ]
 
   function searchLabelsAndValuesByText(objects, searchText) {
     const matchingItems = [];

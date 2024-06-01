@@ -18,6 +18,10 @@
   }
 
 }
+.ant-btn-primary{
+  background-color: var(--thm-black) !important;
+  color: #fff !important;
+}
 .childNav ul{
   display: none;
   }
