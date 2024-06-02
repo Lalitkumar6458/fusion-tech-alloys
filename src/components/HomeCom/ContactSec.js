@@ -181,7 +181,7 @@ const ContactSec = () => {
                                         {item.icon}
                                     </div>
                                 </div>
-                                <div className='flex flex-col text-[1rem] font-Roboto text-gray-600'>
+                                <div className='flex flex-col text-[1.4rem]  md:text-[1.2rem] font-Roboto text-gray-600'>
                                     {item.list.map((each, index) => (
                                         <p key={index}>{each}</p>
                                     ))}

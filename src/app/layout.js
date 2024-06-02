@@ -4,6 +4,8 @@ import Header from "@/components/Base/Header";
 import Footer from "@/components/Base/Footer";
 import TopInfo from "@/components/Base/TopInfo";
 import NavBar from "@/components/Base/NavBar";
+import ScrollToTopButton from "@/components/Base/ScrollTopBtn";
+import Whatsappbtn from "@/components/Base/Whatsappbtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,8 @@ export default function RootLayout({ children }) {
  <NavBar/>
       {children}
       <Footer/>
+      <Whatsappbtn/>
+      <ScrollToTopButton/>
       </body>
     </html>
   );

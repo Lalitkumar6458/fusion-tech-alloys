@@ -69,44 +69,40 @@ const list2=[
 const list3=[
   {
     name:"Inconel Alloys",
-    link:"/material/alloys/InconelAlloys",
+    link:"/alloys/Inconel_600",
   },
   {
-    name:"Monel Alloys",
-    link:"/material/alloys/MonelAlloys",
+    name:"Incoloy Alloys",
+    link:"/alloys/Incoloy_800",
   },
   {
     name:"Hastelloy",
-    link:"/material/alloys/Hastelloy",
-  },
-  {
-    name:"Duplex Alloys",
-    link:"/material/alloys/DuplexAlloys",
-  },
-  {
-    name:"Super Duplex Alloys",
-    link:"/material/alloys/SuperDuplexAlloys",
-  },
-  {
-    name:"Cupro Nickel Alloys",
-    link:"/material/alloys/CuproNickelAlloys",
-  },
-  {
-    name:"SMO 254",
-    link:"/material/alloys/SMO254",
-  },
-  {
-    name:"Alloy 20",
-    link:"/material/alloys/Alloy20",
+    link:"/alloys/Hastelloy_C276",
   },
   {
     name:"Titanium",
-    link:"/material/alloys/Titanium",
+    link:"/alloys/Titanium_Gr_1",
+  },
+  {
+    name:"Zirconium",
+    link:"/alloys/Zirconium_702",
+  },
+  {
+    name:"Cupro Nickel Alloys",
+    link:"/alloys/Cupro_Nickel_70_30",
+  },
+  {
+    name:"Duplex steel",
+    link:"/alloys/Duplex_steel_31803_2205",
+  },
+  {
+    name:"Super Duplex steel",
+    link:"/alloys/Duplex_steel_32750_32760",
   },
 ]
 const handleEmailClick = () => {
 
-  let email='fusiontechalloys@gmail.com'
+  let email='info@fusiontechalloys.com'
   const url = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(email)}`;
   window.open(url);
 };
@@ -141,7 +137,7 @@ const handleInsta = (url) => {
       {'Fusion Tech Alloys is rapidly establishing itself as a prominent frontrunner within the Pipes and Tubes industry. With a specialization in Stainless Steel Pipes, Stainless Steel Tubes, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, and Valves, Maruti Steel Alloys stands out as a premier stockist and supplier in India.'}
       </p>
       <div className='mt-3'>
-      <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'fusiontechalloys@gmail.com'}</strong> </span>
+      <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'info@fusiontechalloys.com'}</strong> </span>
       <span className='flex items-center gap-2 mt-1 cursor-pointer'  onClick={handlePhoneClick} ><FaPhone className='text-thmBase'/> <strong>+91 9137130839 </strong></span>
    
       </div>
