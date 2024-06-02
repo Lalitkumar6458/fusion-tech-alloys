@@ -84,7 +84,7 @@ export const metadata = {
     type: 'website'
   },
   twitter: {
-    card: '/Images/Base/fusionOgImage.png',
+    card: 'summary_large_image',
     title: "Fusion Tech Alloys | Premier Industrial Tubing, Pipe, and Fittings,fasteners Supplier",
     description: "Fusion Tech Alloys is the most acclaimed manufacturer, exporter, distributor, and supplier of industrial Tubing, Pipe, Bar, Round Bar, Bright Finish Bar, dairy fittings, and pipe fittings, complete with required test certificates. We are a leading pipe supplier in Mumbai and a tube stockist in Pune. Our extensive product range includes stainless steel pipes and tubes, buttweld fittings, flanges, socketweld fittings, screwed fittings, fasteners, and valves. We proudly serve various locations including Rajkot, Gujarat, India, and the UAE.",
     images: [
