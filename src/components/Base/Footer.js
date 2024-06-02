@@ -134,7 +134,7 @@ const handleInsta = (url) => {
       <div className='h-1 rounded bg-thmBase w-20'></div>
       </div>
       <p className="font-Oswald text-[0.8rem]">
-      {'Fusion Tech Alloys is rapidly establishing itself as a prominent frontrunner within the Pipes and Tubes industry. With a specialization in Stainless Steel Pipes, Stainless Steel Tubes, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, and Valves, Maruti Steel Alloys stands out as a premier stockist and supplier in India.'}
+      {'Fusion Tech Alloys is rapidly establishing itself as a prominent frontrunner within the Pipes and Tubes industry. With a specialization in Stainless Steel Pipes, Stainless Steel Tubes, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, and Valves, Fusion Tech Alloys stands out as a premier stockist and supplier in India.'}
       </p>
       <div className='mt-3'>
       <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'info@fusiontechalloys.com'}</strong> </span>

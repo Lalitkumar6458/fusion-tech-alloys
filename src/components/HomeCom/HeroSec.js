@@ -62,7 +62,7 @@ const HeroSec = () => {
         <p className='text-[1.2rem] lg:text-[1.2rem] font-Roboto font-medium shadow14 lg:mt-2 mt-4 text-center'>{item.desc}</p>
         <div className='flex items-center gap-3 lg:mt-4 mt-7 justify-center'>
 
-        <Link href="/contactus">
+        <Link href="/contact">
         <button className=' bg-thmBase text-white rounded-md p-2'> Inquiry Now
         </button>
         </Link>

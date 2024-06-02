@@ -47,6 +47,7 @@ const [openSearch, setOpenSearch] = useState(false);
     Material:false,
     Alloys:false
   })
+
   const showDrawer = () => {
     setOpen(true);
   };
@@ -459,7 +460,7 @@ const [openSearch, setOpenSearch] = useState(false);
     >
       <div className="flex items-center justify-between w-full">
         <div className="text-[1.6rem] h-full font-heading font-medium text-dark-cl">
-  <img className='h-[60px] w-[230px] md:w-[270px] object-fill' src={"/Images/Base/logo.png"}  alt='logo'/>
+  <img className='h-[50px] w-[230px] md:w-[270px] object-fill' src={"/Images/Base/logo1.png"}  alt='logo'/>
         </div>
         <div className="flex items-center gap-5">
           <ul className="hidden items-center justify-center gap-3 md:flex">
@@ -467,7 +468,7 @@ const [openSearch, setOpenSearch] = useState(false);
               return (
                 <li
                   key={item.name}
-                  className="text-[1.1rem] font-poppins font-medium rounded-md hover:text-thmBase text-thmBlack h-[60px] px-2 flex items-center justify-center relative group"
+                  className={`text-[1.1rem] font-poppins font-medium rounded-md hover:text-thmBase  h-[60px] px-2 flex items-center justify-center ${pathname==item.link?'text-thmBase ':'text-thmBlack'} relative group`}
                 >
                   <Link href={item.link}>{item.name}</Link>{" "}
                   {item.submenu ? (
@@ -491,7 +492,7 @@ const [openSearch, setOpenSearch] = useState(false);
                                   return (
                                     <li
                                       key={every.name}
-                                      className="text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-thmBase text-thmBlack  border-b border-thmBase flex items-center justify-between hover:border-l-2 relative"
+                                      className={`text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-thmBase   border-b border-thmBase flex items-center justify-between hover:border-l-2 relative ${pathname==every.link?'text-thmBase ':'text-thmBlack'}`}
                                     >
                                       <Link href={every.link}>
                                         {every.name}
@@ -534,7 +535,7 @@ const [openSearch, setOpenSearch] = useState(false);
           <ul>
             {data.map((item, index) => {
               return (
-                <li className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
+                <li key={index} className={` text-[1.2rem] pb-[10px] font-Roboto font-medium ${pathname==item.link?'text-thmBase ':'text-thmBlack'}`}>
                   <div className="flex items-center" key={item.name}>
                     <Link href={item.link}>{item.name}</Link>
                     {item.submenu ? (
@@ -586,7 +587,7 @@ const [openSearch, setOpenSearch] = useState(false);
                               >
                                 {item.submenu.map((item, index) => {
                                   return (
-                                    <li className="px-2 py-2" key={item.name}>
+                                    <li className={`px-2 py-2 ${pathname==item.link?'text-thmBase ':'text-thmBlack'}`} key={item.name}>
                                       <Link href={item.link}>{item.name}</Link>
                                     </li>
                                   );
