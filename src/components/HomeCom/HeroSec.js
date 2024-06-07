@@ -57,7 +57,7 @@ const HeroSec = () => {
 <div className=' absolute top-0 left-0 h-full w-full bg-[#00000050] z-[5]'>
 </div>
         <Image width={item.imgW?item.imgW:1200} height={item.imgH?item.imgH:600} className='h-full w-full object-cover lg:object-fill absolute top-0 left-0' src={item.img} alt='sh'/>
-        <div className='  absolute top-[40%] translate-y-[-40%] lg:top-[25%] lg:translate-y-[-25%] tr   z-10 w-[90%] lg:w-[60%] flex items-center justify-center flex-col '>
+        <div className=' hidden absolute top-[40%] translate-y-[-40%] lg:top-[25%] lg:translate-y-[-25%] tr   z-10 w-[90%] lg:w-[60%]  items-center justify-center flex-col '>
         <h1 className='text-[1.6rem] lg:text-[2.5rem] font-Rubik font-bold textShadowGreen lg:w-[80%] text-center'>{item.heading}</h1>
         <p className='text-[1.2rem] lg:text-[1.2rem] font-Roboto font-medium shadow14 lg:mt-2 mt-4 text-center'>{item.desc}</p>
         <div className='flex items-center gap-3 lg:mt-4 mt-7 justify-center'>

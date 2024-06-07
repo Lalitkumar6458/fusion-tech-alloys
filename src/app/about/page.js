@@ -1,6 +1,8 @@
 import SubHeader from '@/components/Base/SubHeader'
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
+import{FaEye} from "react-icons/fa"
 import { FaStar, FaGlobe, FaBullseye, FaHandshake, FaClock, FaShieldAlt } from 'react-icons/fa';
 const page = () => {
   const bredcrum=[{name:"Home",link:'/'},{name:"About",link:"/about"}]
@@ -133,23 +135,23 @@ const page = () => {
     </div>
 
 
-    <div className="">
+    <div className="hidden">
     <div className="flex items-center justify-center flex-col gap-7">
       <div className='flex items-center justify-center flex-col gap-2 relative mt-[60px]'>
       <h1 className=' font-thmFont text-[2.3rem] font-semibold text-thmBlack'>FectSheet</h1>
       <div className='w-[70px] h-[4px] bg-thmBase rounded-md'></div>
       </div>
       <table
-        className="border-[1px] border-solid border-dark-cl border-collapse w-full animate-section"
+        className="border-[1px] border-solid border-thmBase border-collapse w-full animate-section"
       >
         <tbody>
           {factSheet.map((item) => {
             return (
               <tr>
-                <td className="border-[1px] border-solid border-dark-cl text-[1.2rem] p-2 font-Roboto font-semibold">
+                <td className="border-[1px] border-solid border-thmBase text-[1.2rem] p-2 font-Roboto font-semibold">
                   {item.heading}
                 </td>
-                <td className="border-[1px] border-solid border-dark-cl text-[1.2rem] p-2 font-poppins font-medium">
+                <td className="border-[1px] border-solid border-thmBase text-[1.2rem] p-2 font-poppins font-medium">
                   {item.value}
                 </td>
               </tr>
@@ -159,10 +161,49 @@ const page = () => {
       </table>
     </div>
   </div>
-  <div className='flex items-center justify-center flex-col gap-2 relative mt-[60px] hidden'>
+  <div className='flex items-center justify-center flex-col gap-2 relative mt-[60px] '>
   <h1 className=' font-thmFont text-[2.3rem] font-semibold text-thmBlack'>Certification</h1>
   <div className='w-[70px] h-[4px] bg-thmBase rounded-md'></div>
   </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-5 lg:w-[50%] m-auto">
+          <div className="border p-1 overflow-hidden rounded-md relative">
+            <Link
+              className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
+              href="/Images/Certificates/img1.jpg"
+              target='_blank'
+            >
+              <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
+                <FaEye className=" " />
+              </span>
+            </Link>
+            <Image
+              className="hover:scale-110 transition-all duration-700 ease-in-out"
+              src={"/Images/Certificates/img1.jpg"}
+              alt=""
+              width={600}
+              height={700}
+            />
+          </div>
+          <div className="border p-1 overflow-hidden rounded-md relative">
+            <Link
+              className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
+              href="/Images/Certificates/img2.jpg"
+              target='_blank'
+            >
+              <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
+                <FaEye className=" " />
+              </span>
+            </Link>
+            <Image
+              className="hover:scale-110 transition-all duration-700 ease-in-out"
+              src={"/Images/Certificates/img2.jpg"}
+              alt=""
+              width={600}
+              height={700}
+            />
+          </div>
+        </div>
 
 
     <div className='flex items-center justify-center flex-col gap-2 relative mt-[60px]'>

@@ -5,30 +5,39 @@ import Link from 'next/link'
 import {AiOutlineGoogle} from "react-icons/ai"
 import {FaRss,FaFacebookF,FaTwitter,FaLinkedinIn,FaEnvelope,FaPhone,FaAngleDoubleRight, FaWhatsapp} from "react-icons/fa"
 const Footer = () => {
+  <Link href="/" className='hover:text-thmBase'>Home</Link>
+  |
+    <Link href="/about" className='hover:text-thmBase'>About Us</Link>
+   |
+ 
+    <Link href="/product" className='hover:text-thmBase'>Products</Link>|
+    <Link href="/quality" className='hover:text-thmBase'>Quality</Link>|
+    <Link href="/contact" className='hover:text-thmBase'>Contact Us</Link>
+ 
   const list1=[
     {
-        name:"SS,904L ",
-        link:'/material/StainlessSteel'
+        name:"Home",
+        link:'/'
     },
     {
-        name:"SS,310 ",
-        link:'/material/StainlessSteel'
+        name:"About Us",
+        link:'/about'
     },
     {
-        name:"SS,316L ",
-        link:'/material/StainlessSteel'
+        name:"Products",
+        link:'/products'
     },
     {
-        name:"SS,304L ",
-        link:'/material/StainlessSteel'
+        name:"Quality",
+        link:'/quality'
     },
     {
-        name:"SS,321 ",
-        link:'/material/StainlessSteel'
+        name:"Alloys",
+        link:'/alloys/Inconel_600'
     },
     {
-        name:"SS,347 ",
-        link:'/material/StainlessSteel'
+        name:"Contact Us",
+        link:'/contact'
     }
    
 ]
@@ -138,6 +147,7 @@ const handleInsta = (url) => {
       </p>
       <div className='mt-3'>
       <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'info@fusiontechalloys.com'}</strong> </span>
+      <span className='flex items-center gap-2 cursor-pointer' onClick={handleEmailClick}><FaEnvelope className='text-thmBase' /> <strong>{'sales@fusiontechalloys.com'}</strong> </span>
       <span className='flex items-center gap-2 mt-1 cursor-pointer'  onClick={handlePhoneClick} ><FaPhone className='text-thmBase'/> <strong>+91 9137130839 </strong></span>
    
       </div>
@@ -146,18 +156,18 @@ const handleInsta = (url) => {
       <li className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleEmailClick}><Link href="/" className="fa-brands fa-google"><AiOutlineGoogle/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase  hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 ""
+                 "https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA=="
                )
-             }><Link href="/" className="fa-solid fa-rss"><FaRss/></Link></li>
+             }><Link  href="https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA==" className="fa-solid fa-rss"><FaRss/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 ""
+                 "https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA=="
                )
-             }><Link href="/" className="fa fa-facebook"><FaFacebookF/></Link></li>
+             }><Link href="https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA==" className="fa fa-facebook"><FaFacebookF/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleWhatsAppClick}><Link href="/" className="fa fa-twitter"><FaWhatsapp/></Link></li>
       <li  className='p-2 bg-white text-thmBase rounded-full mr-2 hover:bg-thmBase hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
                handleInsta(
-                 ""
+                 "https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA=="
                )
              }><Link href="/" className="fa fa-linkedin"><FaLinkedinIn/></Link></li>
    </ul>  
@@ -199,7 +209,7 @@ const handleInsta = (url) => {
       </div>
       <div className=''>
       <div className='mb-3'>
-      <h1 className='text-[1.4rem] font-exo uppercase'>STAINLESS STEEL</h1>
+      <h1 className='text-[1.4rem] font-exo uppercase'>Quick Links</h1>
       <div className='h-1 rounded bg-thmBase w-20'></div>
       </div>
       <ul>
@@ -218,7 +228,7 @@ const handleInsta = (url) => {
       <div className='h-[1px] w-full bg-thmBase mt-5'>
    
       </div>
-      <div  className='font-Oswald flex items-start justify-center text-white gap-2 mt-3'>
+      <div  className=' hidden font-Oswald  items-start justify-center text-white gap-2 mt-3'>
       <Link href="/" className='hover:text-thmBase'>Home</Link>
     |
       <Link href="/about" className='hover:text-thmBase'>About Us</Link>

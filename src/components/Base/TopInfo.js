@@ -53,7 +53,7 @@ const TopInfo = () => {
           className="p-2 rounded-full text-thmBase bg-white hover:bg-thmBase hover:text-white cursor-pointer"
           onClick={() =>
             handleInsta(
-              ""
+              "https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA=="
             )
           }
         >
@@ -63,7 +63,7 @@ const TopInfo = () => {
           className="p-2 rounded-full text-thmBase bg-white hover:bg-thmBase hover:text-white cursor-pointer"
           onClick={() =>
             handleInsta(
-              ""
+              "https://www.instagram.com/fusion_tech_alloys?igsh=MXE5d3J2dTVqcjlzMA=="
             )
           }
         >
