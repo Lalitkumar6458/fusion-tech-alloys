@@ -20,7 +20,7 @@ Fusion tech alloys was established by a team of highly experienced specialists p
     </div>
     <div className='lg:p-2'>
     <div className='w-full'>
-    <Image className='w-full rounded-md' src={"/Images/Base/AboutImg.png"} alt="about Img" width={740} height={600}/>
+    <Image className='w-full rounded-md' src={"/Images/Base/aboutImg1.jpg"} alt="about Img" width={1313} height={876}/>
     </div>
     </div>
     </div>

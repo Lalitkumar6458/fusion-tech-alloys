@@ -13,32 +13,47 @@ const HeroSec = () => {
         {
             heading:"Distinguished Manufacturers & Exporters of Bolts and Nuts",
             desc:"Offering an extensive array of industrial fasteners, encompassing nuts, bolts, and washers, crafted with meticulous attention to quality and precision standards.",
-            img:'/Images/HeroImg/Img1.jpg',
+            img:'/Images/HeroImg/weldingImg.jpg',
             link:'',
-            imgH:1920,
-            imgW:1280
+            imgH:785,
+            imgW:1920,
+            name:'Welding Electrodes, Filler Wires & Flux Cored Wires'
         },
         {
             heading:"Accredited Manufacturer & Supplier of High-Quality Steel Products",
             desc:"Specializing in Pipes & Tubes, Bars, Rods, Wires, Flanges, Pipe Fittings, Valves, and Fasteners across a wide spectrum of materials and grades.",
-            img:'/Images/HeroImg/img5.jpg',
+            img:'/Images/HeroImg/flangeImg.jpg',
             link:'',
-            imgH:1920,
-            imgW:1280
+            imgH:760,
+            imgW:1920,
+            name:'Flange'
         },
         {
             heading:"ISO 9001:2015 Certified High-Quality Products",
             desc:"Our commitment to quality is reflected in our ISO 9001:2015 certification. We supply quality products not only across India but also globally, ensuring customer satisfaction and trust.",
-            img:'/Images/HeroImg/img3.webp',
-            link:''
+            img:'/Images/HeroImg/fastanerImg.jpg',
+            link:'',
+            name:'Fasteners',
+            imgH:760,
+            imgW:1920,
         },
         { heading:"Commitment to Excellence and Quality Standards",
             img:"/Images/HeroImg/img4.webp",
             desc:"Our dedication to excellence and adherence to stringent quality standards make us professionals in the field of industrial fasteners.",
             link:"",
             imgH:1920,
-            imgW:720
-        }
+            imgW:720,
+            name:'Rods & Bars'
+        },
+        {
+            heading:"ISO 9001:2015 Certified High-Quality Products",
+            desc:"Our commitment to quality is reflected in our ISO 9001:2015 certification. We supply quality products not only across India but also globally, ensuring customer satisfaction and trust.",
+            img:'/Images/HeroImg/pipeImg.jpg',
+            link:'',
+            name:'Pipe & Tube',
+            imgH:760,
+            imgW:1920,
+        },
     ]
   return (
     <div className='h-[calc(100vh-110px)]'>
@@ -67,6 +82,9 @@ const HeroSec = () => {
         </button>
         </Link>
         </div>
+        </div>
+        <div className='relative w-full z-40 flex items-center justify-center h-full'>
+        <h2 className='text-white text-[1.6rem] lg:text-[2.5rem] font-Rubik font-bold text-center'>{item.name}</h2>
         </div>
         </div>
     })
