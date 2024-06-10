@@ -7,8 +7,8 @@ const AboutSec = () => {
     
     <div className='grid grid-cols-1 gap-3 lg:grid-cols-2'>
     <div className=''>
-     <h3 className='text-[1rem] font-inter text-thmBase'>Welcome to the fusion tech alloys</h3>
-     <h2 className=' text-[2.4rem] leading-[2.5rem] md:text-[3rem]  md:leading-[3.1rem] font-thmFont font-semibold text-thmText mt-2'>Delivering Trusted and Optimal Services for Your Business</h2>
+     <h3 className='text-[1rem] font-inter text-thmBase'>About Fusion tech alloys.</h3>
+     <h2 className=' text-[2.4rem] leading-[2.5rem] md:text-[3rem]  md:leading-[3.1rem] font-thmFont font-semibold text-thmText mt-2'>WHO WE ARE</h2>
 
      <p className='text-[1.2rem] font-inter font-medium text-gray-700'>We recognize that maintaining high quality necessitates upholding excellence at every stage of the process, and we remain steadfast in this commitment.</p>
 

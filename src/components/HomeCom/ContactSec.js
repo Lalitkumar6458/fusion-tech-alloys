@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FaUser, FaPhoneAlt, FaPencil } from 'react-icons/fa';
 import { MdEmail, MdLocationOn,MdEdit  } from 'react-icons/md';
-
+import emailjs from '@emailjs/browser';
 export const ContactData = {
     name: 'Fusion tech alloys',
     address: ['Shop No.03, Gr. Floor, 102, Narayan Building, Ardeshir Dadi Street, C.P.Tank, Mumbai-400004.'],
@@ -53,6 +53,7 @@ const ContactSec = () => {
     };
 
     const handleSubmit = (e) => {
+        setLoading(true)
         e.preventDefault();
         const formErrors = validate();
         if (Object.keys(formErrors).length === 0) {
@@ -65,6 +66,20 @@ const ContactSec = () => {
         } else {
             setErrors(formErrors);
         }
+
+        console.log(formData)
+        emailjs.send('service_5ispfhb', 'template_jgyydac', formData, 'JJN-gcFG_3Ehb9gis')
+        .then(response => {
+          alert('Sent Message Successfully to Fusion tech alloys!')
+            setFormData({ name: '', phone: '', email: '', message: '' });
+            setLoading(false)
+        }, error => {
+          alert(error.text)
+          console.log(error)
+          setLoading(false)
+        });
+
+  
     };
 
     const data = [

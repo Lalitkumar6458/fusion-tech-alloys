@@ -350,6 +350,46 @@ export const applicationsData={
     ]
 }
 
+export const sourceData=[
+  {
+    name:'Nihon Weld',
+    img:'/Images/source/Nihon-weld.jpg'
+  },  {
+    name:'Arcos',
+    img:'/Images/source/acros.png'
+  },  {
+    name:'Oxford Alloys Inc.',
+    img:'/Images/source/oxford-one.jpg'
+  },  {
+    name:'SANDVIK',
+    img:'/Images/source/sandvik.jpg'
+  },  {
+    name:'Special Metals',
+    img:'/Images/source/special-metal.jpg'
+  },  {
+    name:'Haynes International',
+    img:'/Images/source/haynes.jpg'
+  },  {
+    name:'Polymet Corporation',
+    img:'/Images/source/polymet.jpg'
+  },  {
+    name:'ESAB',
+    img:'/Images/source/esab.jpg'
+  },  {
+    name:'Lincoln Electric',
+    img:'/Images/source/lincoln-electric.jpg'
+  },  {
+    name:'UTP',
+    img:'/Images/source/utp.jpg'
+  },  {
+    name:'Bohler',
+    img:'/Images/source/bohler.jpg'
+  },  {
+    name:'Kiswel',
+    img:'/Images/source/kiswel.jpg'
+  },
+]
+
 
 // pipe fiting data
 

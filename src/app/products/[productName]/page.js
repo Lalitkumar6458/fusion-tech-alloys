@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
   
     const pageTitle = `fusion tech alloys - ${Heading}`;
     const pageDescription = `Explore our premium ${Heading} offerings at fusion tech alloys. Leading manufacturer and supplier of top-quality industrial products.`;
-    const pageImage = ProductData.img ? ProductData.img: '/Images/Base/fusionOgImage.png';
+    const pageImage = ProductData.img ?'https://fusiontechalloys.com/'+ProductData.img: 'https://fusiontechalloys.com/Images/Base/fusionOgImage.png';
   
     return {
       title: pageTitle,

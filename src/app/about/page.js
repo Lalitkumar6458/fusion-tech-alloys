@@ -105,7 +105,7 @@ const page = () => {
     </div>
     </div>
     <div className=''>
-     <h3 className='text-[1rem] font-inter text-thmBase'>Welcome to the fusion tech alloys</h3>
+     <h3 className='text-[1rem] font-inter text-thmBase'>About Fusion tech alloys.</h3>
      <h2 className=' text-[2.4rem] leading-[2.5rem] md:text-[3rem]  md:leading-[3.1rem] font-thmFont font-semibold text-thmText mt-2'>Delivering Trusted & Exceptional Service for Your Business</h2>
 
      <p className='text-[1.2rem] font-inter font-medium text-gray-700'>At Fusion Tech Alloys, we believe that true quality is achieved through excellence at every stage of the process. This commitment drives our every action.</p>

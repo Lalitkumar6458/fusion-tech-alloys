@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {BiArrowFromLeft} from "react-icons/bi"
 
-import { GradeData } from '../../../public/ContactData'
+import { GradeData, sourceData } from '../../../public/ContactData'
 import Application from './Application'
 import SupplierCities from './SupplierCities'
 import SupplierCountries from './SupplierCountries'
@@ -139,6 +139,32 @@ const GradeKey = Object.keys(GradeData.gardeData);
               })}
             </div>
           </div>
+
+{
+  name==="Welding Consumables"&& <div className=''>
+  <div className=" border-b border-gray-500 mt-[40px]">
+  <h3 className="text-[1.6rem] md:text-[1.9rem] font-Roboto font-semibold border-b-2 border-mainRed w-fit text-dark-cl">
+  Our Sources
+  </h3>
+</div>
+
+<div className='grid grid-cols-1 md:grid-cols-3 gap-4  my-5'>
+{
+sourceData.map((item,i)=>{
+return <div className=' shadow-md border rounded-md group' key={i}>
+<div className=' overflow-hidden'>
+<Image className='w-full h-[110px] group-hover:scale-125 transition-all duration-700 ease-in-out' src={item.img} alt={item.name} width={250} height={133} />
+</div>
+<h2 className='h-[35px] flex items-center justify-center font-oswald text-gray-800 font-medium border-t-2 border-thmBase '>{item.name}</h2>
+</div>
+}
+)
+}
+</div>
+
+  </div>
+}
+         
           <Application name={name} />
           <SupplierCities name={name} />
           <SupplierCountries name={name} />

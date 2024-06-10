@@ -14,6 +14,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "footer-bg":'var(--thm-black) url(/public/Images/footer-bg.png) center top no-repeat;',
+          "Third-bg":'url(/public/Images/Base/inspection.png);',
           ContactImg:"linear-gradient(rgba(39,38,29,0.7),rgba(39,38,29,0.7)),url(/Images/Base/bgContactImg.png)",
       },
       colors:{

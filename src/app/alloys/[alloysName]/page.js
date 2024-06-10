@@ -87,7 +87,7 @@ else{
 
   const pageTitle = `fusion tech alloys - ${Heading}`;
   const pageDescription = `Explore our premium ${Heading} offerings at fusion tech alloys. Leading manufacturer and supplier of top-quality industrial products.`;
-  const pageImage =  '/Images/Base/fusionOgImage.png';
+  const pageImage =  'https://fusiontechalloys.com/Images/Base/fusionOgImage.png';
 
   return {
     title: pageTitle,

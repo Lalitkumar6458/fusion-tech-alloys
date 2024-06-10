@@ -18,7 +18,7 @@ const SupplierCities = ({ name }) => {
       </div>
 
       <p className=" font-poppins text-[1.1rem] mt-8">{CitiesData.text(name)}</p>
-      <div className=" overflow-auto">
+      <div className=" overflow-auto hidden">
         
         <table className="border-collapse border w-full mt-9">
           <thead>
