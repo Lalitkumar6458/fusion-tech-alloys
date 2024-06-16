@@ -13,7 +13,7 @@ export const metadata = {
   title: "Fusion Tech Alloys | Premier Industrial Tubing, Pipe, and Fittings,fasteners Supplier",
   description: "Fusion Tech Alloys is the most acclaimed manufacturer, exporter, distributor, and supplier of industrial Tubing, Pipe, Bar, Round Bar, Bright Finish Bar, dairy fittings, and pipe fittings, complete with required test certificates. We are a leading pipe supplier in Mumbai and a tube stockist in Pune. Our extensive product range includes stainless steel pipes and tubes, buttweld fittings, flanges, socketweld fittings, screwed fittings, fasteners, and valves. We proudly serve various locations including Rajkot, Gujarat, India, and the UAE.",
   icons: {
-    icon: '/favicon.ico', // /public path
+    icon: '/Fevicon/favicon-16x16.png', // /public path
   },
   keywords: [
     "Fusion Tech Alloys",
@@ -84,7 +84,7 @@ export const metadata = {
     type: 'website'
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'product',
     title: "Fusion Tech Alloys | Premier Industrial Tubing, Pipe, and Fittings,fasteners Supplier",
     description: "Fusion Tech Alloys is the most acclaimed manufacturer, exporter, distributor, and supplier of industrial Tubing, Pipe, Bar, Round Bar, Bright Finish Bar, dairy fittings, and pipe fittings, complete with required test certificates. We are a leading pipe supplier in Mumbai and a tube stockist in Pune. Our extensive product range includes stainless steel pipes and tubes, buttweld fittings, flanges, socketweld fittings, screwed fittings, fasteners, and valves. We proudly serve various locations including Rajkot, Gujarat, India, and the UAE.",
     images: [
@@ -102,14 +102,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
-    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/Fevicon/favicon.ico" sizes="any" />
      <link rel="apple-touch-icon" sizes="152x152" href="/FavIcon/apple-touch-icon.png"/>
      <link rel="icon" type="image/png" sizes="32x32" href="/FavIcon/favicon-32x32.png"/>
      <link rel="icon" type="image/png" sizes="16x16" href="/FavIcon/favicon-16x16.png"/>
      <link rel="manifest" href="/FavIcon/site.webmanifest"/>
      <link rel="mask-icon" href="/FavIcon/safari-pinned-tab.svg" color="#5bbad5"/>
      <meta name="msapplication-TileColor" content="#da532c"/>
-     <meta name="google-site-verification" content="Z19pIGmtLLwScOU4YXBRXfiLFx5C0WziJdM7wuX_YpU" />
    <meta name="theme-color" content="#ffffff"/>
      </head>
       <body className={`${inter.className}`}>
