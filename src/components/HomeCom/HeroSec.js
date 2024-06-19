@@ -84,7 +84,7 @@ const HeroSec = () => {
         </div>
         </div>
         <div className='relative w-full z-40 flex items-center justify-center h-full'>
-        <h2 className='text-white text-[1.6rem] lg:text-[2.5rem] font-Rubik font-bold text-center'>{item.name}</h2>
+        <h2 className='text-white text-[3rem] font-thmFont font-bold text-center'>{item.name}</h2>
         </div>
         </div>
     })
