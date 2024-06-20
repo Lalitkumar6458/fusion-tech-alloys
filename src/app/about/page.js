@@ -94,6 +94,21 @@ const page = () => {
       value: "By Road",
     },
   ];
+
+  const certificateData=[
+    {
+      name:'',
+      img:'/Images/Certificates/img3.jpg'
+    },
+    {
+      name:'',
+      img:'/Images/Certificates/img1.jpg'
+    },
+    {
+      name:'',
+      img:'/Images/Certificates/img2.jpg'
+    },
+  ]
   return (
     <div>
     <SubHeader data={{heading:"About Us",bredcrum:bredcrum}}/>
@@ -167,60 +182,30 @@ const page = () => {
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-5 lg:w-[80%] m-auto">
-  <div className="border p-1 overflow-hidden rounded-md relative">
-  <Link
-    className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
-    href="/Images/Certificates/img3.jpg"
-    target='_blank'
-  >
-    <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
-      <FaEye className=" " />
-    </span>
-  </Link>
-  <Image
-    className="hover:scale-110 transition-all duration-700 ease-in-out"
-    src={"/Images/Certificates/img3.jpg"}
-    alt=""
-    width={600}
-    height={700}
-  />
-</div>
-          <div className="border p-1 overflow-hidden rounded-md relative">
-            <Link
-              className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
-              href="/Images/Certificates/img1.jpg"
-              target='_blank'
-            >
-              <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
-                <FaEye className=" " />
-              </span>
-            </Link>
-            <Image
-              className="hover:scale-110 transition-all duration-700 ease-in-out"
-              src={"/Images/Certificates/img1.jpg"}
-              alt=""
-              width={600}
-              height={700}
-            />
-          </div>
-          <div className="border p-1 overflow-hidden rounded-md relative">
-            <Link
-              className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
-              href="/Images/Certificates/img2.jpg"
-              target='_blank'
-            >
-              <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
-                <FaEye className=" " />
-              </span>
-            </Link>
-            <Image
-              className="hover:scale-110 transition-all duration-700 ease-in-out"
-              src={"/Images/Certificates/img2.jpg"}
-              alt=""
-              width={600}
-              height={700}
-            />
-          </div>
+  {
+    certificateData.map((item,index)=>{
+      return   <div key={index} className="border p-1 overflow-hidden rounded-md relative">
+      <Link
+        className=" absolute top-[20px] right-[10px] z-50 text-[14px]"
+        href={item.img}
+        target='_blank'
+      >
+        <span className="  absolute top-[10px] right-[10px] text-[25px] h-[40px] w-[40px] bg-thmBase  rounded-full text-white  flex items-center justify-center">
+          <FaEye className=" " />
+        </span>
+      </Link>
+      <Image
+        className="hover:scale-110 transition-all duration-700 ease-in-out"
+        src={item.img}
+        alt=""
+        width={600}
+        height={700}
+      />
+    </div>
+    })
+  }
+
+         
         </div>
 
 
