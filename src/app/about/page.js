@@ -101,6 +101,10 @@ const page = () => {
       img:'/Images/Certificates/img3.jpg'
     },
     {
+ name:'',
+      img:'/Images/Certificates/img4.jpg'
+    },
+    {
       name:'',
       img:'/Images/Certificates/img1.jpg'
     },
@@ -181,7 +185,7 @@ const page = () => {
   <div className='w-[70px] h-[4px] bg-thmBase rounded-md'></div>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-5 lg:w-[80%] m-auto">
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-5 lg:w-[100%] m-auto">
   {
     certificateData.map((item,index)=>{
       return   <div key={index} className="border p-1 overflow-hidden rounded-md relative">
