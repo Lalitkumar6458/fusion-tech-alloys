@@ -5,7 +5,7 @@ import { MdEmail, MdLocationOn,MdEdit  } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
 export const ContactData = {
     name: 'Fusion tech alloys',
-    address: ['Shop No.03, Gr. Floor, 102, Narayan Building, Ardeshir Dadi Street, C.P.Tank, Mumbai-400004.'],
+    address: ['Office No.103, 1st Floor, Lakdawala Sapphire, Plot CS No.3942 21-23, Ram Mandir Rd, 4Th Kumbharwada, Girgaon, Mumbai, Maharashtra 400004.'],
     email: ['info@fusiontechalloys.com', 'sales@fusiontechalloys.com'],
     phone: ['9137130839', '9875782537', '022-66518806'],
     SocialLink: [

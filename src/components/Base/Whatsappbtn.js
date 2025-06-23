@@ -5,7 +5,7 @@ import React from 'react'
 
 const Whatsappbtn = () => {
       const handleWhatsAppClick = () => {
-        let phoneNumber = "+919137130839"
+        let phoneNumber = "9137130839"
         const formattedPhoneNumber = phoneNumber.replace(/\D/g, ""); // Remove non-numeric characters
         const url = `https://wa.me/${formattedPhoneNumber}`;
         window.open(url, "_blank");
