@@ -110,6 +110,8 @@ export default function RootLayout({ children }) {
      <link rel="mask-icon" href="/FavIcon/safari-pinned-tab.svg" color="#5bbad5"/>
      <meta name="msapplication-TileColor" content="#da532c"/>
    <meta name="theme-color" content="#ffffff"/>
+   <meta name="msvalidate.01" content="63957D669D5E8771E086E22F34FDA836" />
+   <meta name="google-site-verification" content="sx7Wi_h2kJhJ6ygoKBaYjG3VzAgbQnEXxjyRegDamCY" />
      </head>
       <body className={`${inter.className}`}>
  <NavBar/>
